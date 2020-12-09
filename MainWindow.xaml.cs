@@ -1,5 +1,6 @@
 ﻿using curse_work.Models;
 using curse_work.Repository;
+using curse_work.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,12 +29,15 @@ namespace curse_work
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        { 
-            var user = new User();
-            user.Login = Login.Text;
-            user.Password = Login.Text;
+        {
+            //var user = new User();
+            //user.Login = Login.Text;
+            //user.Password = Login.Text;
 
-            UserRepository.Login(user);
+            //UserRepository.Login(user);
+
+            new MenuWindow().Show();
+            this.Close();
         }
     }
 }

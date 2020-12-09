@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace curse_work
+namespace curse_work.Windows
 {
     /// <summary>
     /// Логика взаимодействия для MenuWindow.xaml
@@ -20,6 +20,21 @@ namespace curse_work
         public MenuWindow()
         {
             InitializeComponent();
+        }
+
+        private void EmploersListOpenWindow(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MedWatchListOpenWindow(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MedWatchAddOpenWindow(object sender, RoutedEventArgs e)
+        {
+            new MedWatchAddWindow().ShowDialog();
         }
     }
 }
