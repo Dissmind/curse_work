@@ -7,15 +7,15 @@ namespace curse_work.Models
     class MedWatchModel
     {
         public int Id;
+        public string Name;
         public DoctorModel Doctor;
-        public string Age;
         public string Description;
 
-        public MedWatchModel(int id, DoctorModel doctor, string age, string description)
+        public MedWatchModel(int id, string name, DoctorModel doctor, string description)
         {
             Id = id;
+            Name = name;
             Doctor = doctor;
-            Age = age;
             Description = description;
         }
     }

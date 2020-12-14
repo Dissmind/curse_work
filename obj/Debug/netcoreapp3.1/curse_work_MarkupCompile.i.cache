@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Dev\source\C#\curse_work\curse_work\App.xaml
-5-1227165415
+81563620970
 
-14-2006922769
+21-9859066
 203-718097625
-AddMedWindow.xaml;EmploersList.xaml;MainWindow.xaml;MedListWindow.xaml;MenuWindow.xaml;
+MainWindow.xaml;Windows\AddDoctorWindow.xaml;Windows\AddMedWindow.xaml;Windows\DeleteMedWatchWindow.xaml;Windows\DoctorsListWindow.xaml;Windows\MedListWindow.xaml;Windows\MedWatchAddWindow.xaml;Windows\MenuWindow.xaml;
 
-False
+True
 

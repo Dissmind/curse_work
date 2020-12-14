@@ -24,7 +24,7 @@ namespace curse_work.Windows
 
         private void EmploersListOpenWindow(object sender, RoutedEventArgs e)
         {
-
+            new DoctorsListWindow().ShowDialog();
         }
 
         private void MedWatchListOpenWindow(object sender, RoutedEventArgs e)

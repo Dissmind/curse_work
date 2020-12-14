@@ -9,6 +9,6 @@
     <Grid>
         <Button Content="Записаться на прием" HorizontalAlignment="Center" Margin="0,102,0,0" VerticalAlignment="Top" Height="32" Width="154" Click="MedWatchAddOpenWindow"/>
         <Button Content="Список Мед Осмотров" HorizontalAlignment="Center" Margin="0,156,0,0" VerticalAlignment="Top" Height="32" Width="154" Click="MedWatchListOpenWindow"/>
-        <Button Content="Список сотрудников" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="32" Width="154" Click="MedWatchListOpenWindow"/>
+        <Button Content="Список сотрудников" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="32" Width="154" Click="EmploersListOpenWindow"/>
     </Grid>
 </Window>

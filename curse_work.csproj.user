@@ -7,33 +7,48 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AddMedWindow.xaml.cs">
+    <Compile Update="Windows\AddDoctorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="EmploersList.xaml.cs">
+    <Compile Update="Windows\AddMedWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MedListWindow.xaml.cs">
+    <Compile Update="Windows\DeleteMedWatchWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MenuWindow.xaml.cs">
+    <Compile Update="Windows\DoctorsListWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\MedWatchAddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\MenuWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AddMedWindow.xaml">
+    <Page Update="Windows\AddDoctorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="EmploersList.xaml">
+    <Page Update="Windows\AddMedWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\DeleteMedWatchWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\DoctorsListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MedListWindow.xaml">
+    <Page Update="Windows\MedListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MenuWindow.xaml">
+    <Page Update="Windows\MedWatchAddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\MenuWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

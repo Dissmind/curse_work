@@ -10,16 +10,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace curse_work
+namespace curse_work.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для EmploersList.xaml
+    /// Логика взаимодействия для DoctorsListWindow.xaml
     /// </summary>
-    public partial class EmploersList : Window
+    public partial class DoctorsListWindow : Window
     {
-        public EmploersList()
+        public DoctorsListWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new AddDoctorWindow().Show();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace curse_work
             public static string Host = "127.0.0.1";
             public static string User = "root";
             public static string Password = "";
-            public static string DataBase = "test";
+            public static string DataBase = "course_work";
         }
 
 

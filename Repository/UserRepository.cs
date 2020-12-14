@@ -22,13 +22,10 @@ namespace curse_work.Repository
 
             reader.Read();
 
-            //int id = cmd.ExecuteScalar();
-
             MessageBox.Show(reader.GetInt32("id").ToString());
 
             db.CloseConnection();
 
-            //return id;
             return 1;
         }
     }
