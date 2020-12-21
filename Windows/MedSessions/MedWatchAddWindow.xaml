@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="MedWatchAddWindow" Height="376" Width="579">
     <Grid Margin="0,0,10,11">
-        <Button Content="Добавить" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="31" Width="100"/>
-        <TextBox HorizontalAlignment="Left" Margin="278,181,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
-        <TextBox HorizontalAlignment="Left" Margin="278,143,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
-        <TextBox HorizontalAlignment="Left" Margin="278,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
-        <TextBox HorizontalAlignment="Left" Margin="278,58,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
+        <Button Content="Добавить" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="31" Width="100" Click="Add_Button_Click"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="278,181,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
+        <TextBox x:Name="doctor" HorizontalAlignment="Left" Margin="278,143,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
+        
+        <TextBox x:Name="time" HorizontalAlignment="Left" Margin="278,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
+        <TextBox x:Name="desc" HorizontalAlignment="Left" Margin="278,58,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="23"/>
         <Label Content="ФИО" HorizontalAlignment="Left" Margin="224,57,0,0" VerticalAlignment="Top"/>
         <Label Content="Врач" HorizontalAlignment="Left" Margin="224,99,0,0" VerticalAlignment="Top"/>
         <Label Content="Время" HorizontalAlignment="Left" Margin="216,142,0,0" VerticalAlignment="Top"/>

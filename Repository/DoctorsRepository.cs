@@ -1,6 +1,7 @@
 ﻿using curse_work.Models;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,6 +9,10 @@ namespace curse_work.Repository
 {
     class DoctorsRepository
     {
+        public static ICollection GetAll()
+        {
+            return new List<int>();
+        }
 
         public static void Add(DoctorModel data)
         {
@@ -22,6 +27,12 @@ namespace curse_work.Repository
             MySqlDataReader reader = command.ExecuteReader();
 
             db.CloseConnection();
+
+        }
+
+
+        public static void Delete(int id)
+        {
 
         }
     }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using curse_work.Models;
+using curse_work.Repository;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +22,33 @@ namespace curse_work.Windows
         public MedWatchAddWindow()
         {
             InitializeComponent();
+        }
+
+        private void Add_Button_Click(object sender, RoutedEventArgs e)
+        {
+            //var data = new MedWatchModel
+            //    (
+            //        name.Text,
+            //        Int32.Parse(doctor.Text),
+            //        time.Text,
+            //        desc.Text
+            //    );
+
+            var data = new MedWatchModel("name", 1, "10:10", "qwewqeq");
+
+            try
+            {
+                MedWatchRepository.Add(data);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show($"Ошибка, нет доступа к Базе Данных. \n Сообщение ошибки: ${error.Message}");
+                this.Close();
+                return;
+            }
+
+            MessageBox.Show("Запись успешно добавлена в Базу данных.");
+            this.Close();
         }
     }
 }

@@ -8,14 +8,16 @@ namespace curse_work.Models
     {
         public int Id;
         public string Name;
-        public DoctorModel Doctor;
+        public int DoctorId;
+        public string Time;
+
         public string Description;
 
-        public MedWatchModel(int id, string name, DoctorModel doctor, string description)
+        public MedWatchModel(string name, int doctorId, string time, string description)
         {
-            Id = id;
             Name = name;
-            Doctor = doctor;
+            DoctorId = doctorId;
+            Time = time;
             Description = description;
         }
     }
