@@ -4,7 +4,7 @@ using System.Text;
 
 namespace curse_work.Models
 {
-    class MedWatchModel
+    public class MedWatchModel
     {
         public int Id;
         public string Name;
@@ -19,6 +19,20 @@ namespace curse_work.Models
             DoctorId = doctorId;
             Time = time;
             Description = description;
+        }
+
+        public MedWatchModel(int id, string name, int doctorId, string time, string description)
+        {
+            Id = id;
+            Name = name;
+            DoctorId = doctorId;
+            Time = time;
+            Description = description;
+        }
+
+        public override string ToString()
+        {
+            return $"Id:{this.Id}, Name:{this.Name}, DoctorId:{this.DoctorId}, Time:{this.Time}, Description:{this.Description}.";
         }
     }
 }

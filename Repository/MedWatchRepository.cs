@@ -7,11 +7,40 @@ using System.Text;
 
 namespace curse_work.Repository
 {
-    class MedWatchRepository
+    public class MedWatchRepository
     {
         public static ICollection GetAll()
         {
-            return new List<int>();
+            var result = new List<MedWatchModel>();
+
+            var db = new DB();
+
+            string table = "med_watch";
+            string query = $"SELECT * FROM {table}";
+
+            db.OpenConnection();
+
+            MySqlCommand command = new MySqlCommand(query, db.GetConnection());
+
+            MySqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                var data = new MedWatchModel
+                    (
+                        Int32.Parse(reader.GetValue(0).ToString()),
+                        reader.GetValue(1).ToString(),
+                        Int32.Parse(reader.GetValue(2).ToString()),
+                        reader.GetValue(3).ToString(),
+                        reader.GetValue(4).ToString()
+                    );
+
+                result.Add(data);
+            }
+
+            db.CloseConnection();
+
+            return result;
         }
 
 
