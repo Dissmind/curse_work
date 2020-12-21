@@ -29,7 +29,7 @@ namespace curse_work.Windows
 
         private void MedWatchListOpenWindow(object sender, RoutedEventArgs e)
         {
-
+            new MedListWindow().ShowDialog();
         }
 
         private void MedWatchAddOpenWindow(object sender, RoutedEventArgs e)

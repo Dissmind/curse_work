@@ -11,13 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Windows\MedListWindow.xaml.cs">
+    <Compile Update="Windows\MedSessions\MedListWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Windows\MedListWindow.xaml">
+    <Page Update="Windows\MedSessions\MedListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

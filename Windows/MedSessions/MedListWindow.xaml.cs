@@ -1,4 +1,5 @@
-﻿using System;
+﻿using curse_work.Windows;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,17 @@ namespace curse_work
         public MedListWindow()
         {
             InitializeComponent();
+        }
+
+        private void Delete_Button_Click(object sender, RoutedEventArgs e)
+        {
+            new DeleteMedWatchWindow().ShowDialog();
+        }
+
+
+        private void Add_Button_Click(object sender, RoutedEventArgs e)
+        {
+            new MedWatchAddWindow().ShowDialog();
         }
     }
 }

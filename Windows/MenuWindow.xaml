@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:curse_work.Windows"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="450" Width="800">
+        Title="MenuWindow" 
+        MinHeight="450" MinWidth="800" 
+        MaxHeight="450" MaxWidth="800">
     <Grid>
         <Button Content="Записаться на прием" HorizontalAlignment="Center" Margin="0,102,0,0" VerticalAlignment="Top" Height="32" Width="154" Click="MedWatchAddOpenWindow"/>
         <Button Content="Список Мед Осмотров" HorizontalAlignment="Center" Margin="0,156,0,0" VerticalAlignment="Top" Height="32" Width="154" Click="MedWatchListOpenWindow"/>

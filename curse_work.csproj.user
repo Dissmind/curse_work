@@ -7,19 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Windows\AddDoctorWindow.xaml.cs">
+    <Compile Update="Windows\Purchases\AddDoctorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\AddMedWindow.xaml.cs">
+    <Compile Update="Windows\MedSessions\DeleteMedWatchWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\DeleteMedWatchWindow.xaml.cs">
+    <Compile Update="Windows\Purchases\DeleteDoctorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\DoctorsListWindow.xaml.cs">
+    <Compile Update="Windows\Purchases\DoctorsListWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\MedWatchAddWindow.xaml.cs">
+    <Compile Update="Windows\MedSessions\MedWatchAddWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Windows\MenuWindow.xaml.cs">
@@ -27,25 +27,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Windows\AddDoctorWindow.xaml">
+    <Page Update="Windows\Purchases\AddDoctorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\AddMedWindow.xaml">
+    <Page Update="Windows\MedSessions\DeleteMedWatchWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\DeleteMedWatchWindow.xaml">
+    <Page Update="Windows\Purchases\DeleteDoctorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\DoctorsListWindow.xaml">
+    <Page Update="Windows\Purchases\DoctorsListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\MedListWindow.xaml">
+    <Page Update="Windows\MedSessions\MedListWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\MedWatchAddWindow.xaml">
+    <Page Update="Windows\MedSessions\MedWatchAddWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Windows\MenuWindow.xaml">

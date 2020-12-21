@@ -30,14 +30,24 @@ namespace curse_work
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //var user = new User();
-            //user.Login = Login.Text;
-            //user.Password = Login.Text;
+            var user = new User(
+                Login.Text,
+                Password.Text
+            );
 
-            //UserRepository.Login(user);
+            bool status = UserRepository.Login(user);
 
-            new MenuWindow().Show();
-            this.Close();
+            if (status)
+            {
+                MessageBox.Show("Авторизация прошла успешно!");
+
+                new MenuWindow().Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Не верный логин или пароль. Повторите попытку!");
+            }
         }
     }
 }

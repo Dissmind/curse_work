@@ -10,21 +10,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace curse_work.Windows
+namespace curse_work.Windows.Purchases
 {
     /// <summary>
-    /// Логика взаимодействия для DoctorsListWindow.xaml
+    /// Логика взаимодействия для DeleteDoctorWindow.xaml
     /// </summary>
-    public partial class DoctorsListWindow : Window
+    public partial class DeleteDoctorWindow : Window
     {
-        public DoctorsListWindow()
+        public DeleteDoctorWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            new AddDoctorWindow().Show();
         }
     }
 }

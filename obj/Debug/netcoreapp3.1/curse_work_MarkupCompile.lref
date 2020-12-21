@@ -1,11 +1,11 @@
 ﻿
 
 FC:\Dev\source\C#\curse_work\curse_work\MainWindow.xaml;;
-FC:\Dev\source\C#\curse_work\curse_work\Windows\AddDoctorWindow.xaml;;
-FC:\Dev\source\C#\curse_work\curse_work\Windows\AddMedWindow.xaml;;
-FC:\Dev\source\C#\curse_work\curse_work\Windows\DeleteMedWatchWindow.xaml;;
-FC:\Dev\source\C#\curse_work\curse_work\Windows\DoctorsListWindow.xaml;;
-FC:\Dev\source\C#\curse_work\curse_work\Windows\MedListWindow.xaml;;
-FC:\Dev\source\C#\curse_work\curse_work\Windows\MedWatchAddWindow.xaml;;
+FC:\Dev\source\C#\curse_work\curse_work\Windows\MedSessions\DeleteMedWatchWindow.xaml;;
+FC:\Dev\source\C#\curse_work\curse_work\Windows\MedSessions\MedListWindow.xaml;;
+FC:\Dev\source\C#\curse_work\curse_work\Windows\MedSessions\MedWatchAddWindow.xaml;;
 FC:\Dev\source\C#\curse_work\curse_work\Windows\MenuWindow.xaml;;
+FC:\Dev\source\C#\curse_work\curse_work\Windows\Purchases\AddDoctorWindow.xaml;;
+FC:\Dev\source\C#\curse_work\curse_work\Windows\Purchases\DeleteDoctorWindow.xaml;;
+FC:\Dev\source\C#\curse_work\curse_work\Windows\Purchases\DoctorsListWindow.xaml;;
 
