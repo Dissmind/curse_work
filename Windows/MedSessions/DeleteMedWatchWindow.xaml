@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:curse_work.Windows"
         mc:Ignorable="d"
-        Title="DeleteMedWatchWindow" Height="170" Width="300">
+        Title="DeleteMedWatchWindow" MinHeight="250" MinWidth="300" MaxHeight="250" MaxWidth="300">
     <Grid>
         <ComboBox Name="cb" HorizontalAlignment="Center" Margin="0,61,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Content="Удалить" HorizontalAlignment="Center" Margin="0,111,0,0" VerticalAlignment="Top" Width="67" Click="Button_Click"/>
