@@ -48,11 +48,12 @@ namespace curse_work.Repository
         {
             var db = new DB();
 
-            string query = $"INSERT doctors VALUES (null, '{data.Name}', {data.DoctorId}, '{data.Time}', '{data.Description}')";
+            string query = $"INSERT med_watch VALUES (null, '{data.Name}', {data.DoctorId}, '{data.Time}', '{data.Description}')";
 
             db.OpenConnection();
 
             MySqlCommand command = new MySqlCommand(query, db.GetConnection());
+            command.ExecuteNonQuery();
 
             db.CloseConnection();
         }
@@ -62,11 +63,12 @@ namespace curse_work.Repository
         {
             var db = new DB();
 
-            string query = $"DELETE FROM doctors WHERE id = {id}";
+            string query = $"DELETE FROM med_watch WHERE id = {id}";
 
             db.OpenConnection();
 
             MySqlCommand command = new MySqlCommand(query, db.GetConnection());
+            command.ExecuteNonQuery();
 
             db.CloseConnection();
         }
