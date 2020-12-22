@@ -4,7 +4,7 @@ using System.Text;
 
 namespace curse_work.Models
 {
-    class DoctorModel
+    public class DoctorModel
     {
         public int Id;
         public string Name;
@@ -21,6 +21,11 @@ namespace curse_work.Models
         {
             Name = name;
             Type = type;
+        }
+
+        public override string ToString()
+        {
+            return $"Id: {this.Id}, Name: {this.Name}, Type: {this.Type}.";
         }
     }
 }
