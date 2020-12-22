@@ -33,7 +33,15 @@ namespace curse_work.Repository
 
         public static void Delete(int id)
         {
+            var db = new DB();
 
+            string query = $"DELETE FROM doctors WHERE id = {id}";
+
+            db.OpenConnection();
+
+            MySqlCommand command = new MySqlCommand(query, db.GetConnection());
+
+            db.CloseConnection();
         }
     }
 }
