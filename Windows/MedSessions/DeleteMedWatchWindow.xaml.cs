@@ -35,6 +35,9 @@ namespace curse_work.Windows
             string id = cbText.Substring(0, cbText.IndexOf('.'));
 
             MedWatchRepository.Delete(Int32.Parse(id));
+
+            MessageBox.Show("Запись успешно удалена");
+            this.Close();
         }
     }
 }

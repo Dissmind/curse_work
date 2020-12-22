@@ -41,6 +41,9 @@ namespace curse_work.Windows.Purchases
             string id = cbText.Substring(0, cbText.IndexOf('.'));
 
             DoctorsRepository.Delete(Int32.Parse(id));
+
+            MessageBox.Show("Запись успешно удалена");
+            this.Close();
         }
     }
 }
