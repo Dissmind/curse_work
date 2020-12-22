@@ -1,14 +1,10 @@
-﻿using System;
+﻿using curse_work.Models;
+using curse_work.Repository;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace curse_work.Windows
 {
@@ -20,6 +16,25 @@ namespace curse_work.Windows
         public DeleteMedWatchWindow()
         {
             InitializeComponent();
+
+            List<MedWatchModel> allData = MedWatchRepository.GetAll();
+            var cbList = new List<string>();
+            
+            foreach (var i in allData)
+            {
+                cbList.Add($"{i.Id}. {i.Name}. {i.Time}");
+            }
+
+            cb.ItemsSource = cbList;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string cbText = cb.Text;
+
+            string id = cbText.Substring(0, cbText.IndexOf('.'));
+
+            MedWatchRepository.Delete(Int32.Parse(id));
         }
     }
 }

@@ -26,15 +26,12 @@ namespace curse_work.Windows
 
         private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
-            //var data = new MedWatchModel
-            //    (
-            //        name.Text,
-            //        Int32.Parse(doctor.Text),
-            //        time.Text,
-            //        desc.Text
-            //    );
-
-            var data = new MedWatchModel("name", 1, "10:10", "qwewqeq");
+            var data = new MedWatchModel(
+                    name.Text, 
+                    Int32.Parse(doctor.Text), 
+                    time.Text, 
+                    desc.Text
+                );
 
             try
             {
