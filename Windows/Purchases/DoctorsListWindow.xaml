@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="DoctorsListWindow" Height="450" Width="800">
     <Grid>
+        <DataGrid Name="doctorsGrid" />
+
+
+
         <Button Content="Удалить Запись" HorizontalAlignment="Left" Margin="130,320,0,0" VerticalAlignment="Top" Height="32" Width="105" Click="Delete_Button_Click"/>
         <Button Content="Добавить Запись" HorizontalAlignment="Left" Margin="262,320,0,0" VerticalAlignment="Top" Height="32" Width="108" Click="Add_Button_Click"/>
     </Grid>

@@ -6,10 +6,10 @@ namespace curse_work.Models
 {
     public class MedWatchModel
     {
-        public int Id;
-        public string Name;
-        public int DoctorId;
-        public string Time;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int DoctorId { get; set; }
+        public string Time { get; set; }
 
         public string Description;
 

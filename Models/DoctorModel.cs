@@ -6,9 +6,9 @@ namespace curse_work.Models
 {
     public class DoctorModel
     {
-        public int Id;
-        public string Name;
-        public string Type;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Type { get; set; }
 
         public DoctorModel(int id, string name, string type)
         {
