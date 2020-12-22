@@ -9,7 +9,7 @@ namespace curse_work.Repository
 {
     public class DoctorsRepository
     {
-        public static ICollection GetAll()
+        public static List<DoctorModel> GetAll()
         {
             var result = new List<DoctorModel>();
 

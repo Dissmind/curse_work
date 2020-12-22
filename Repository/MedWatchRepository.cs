@@ -9,7 +9,7 @@ namespace curse_work.Repository
 {
     public class MedWatchRepository
     {
-        public static ICollection GetAll()
+        public static List<MedWatchModel> GetAll()
         {
             var result = new List<MedWatchModel>();
 
