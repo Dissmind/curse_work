@@ -67,6 +67,7 @@ namespace curse_work.Repository
             db.OpenConnection();
 
             MySqlCommand command = new MySqlCommand(query, db.GetConnection());
+            command.ExecuteNonQuery();
 
             db.CloseConnection();
         }

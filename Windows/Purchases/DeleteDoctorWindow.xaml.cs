@@ -1,4 +1,6 @@
-﻿using System;
+﻿using curse_work.Models;
+using curse_work.Repository;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +22,25 @@ namespace curse_work.Windows.Purchases
         public DeleteDoctorWindow()
         {
             InitializeComponent();
+
+            List<DoctorModel> allData = DoctorsRepository.GetAll();
+            var cbList = new List<string>();
+
+            foreach (var i in allData)
+            {
+                cbList.Add($"{i.Id}. {i.Name}");
+            }
+
+            cb.ItemsSource = cbList;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string cbText = cb.Text;
+
+            string id = cbText.Substring(0, cbText.IndexOf('.'));
+
+            DoctorsRepository.Delete(Int32.Parse(id));
         }
     }
 }

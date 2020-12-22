@@ -22,7 +22,7 @@ namespace curse_work.Windows
             
             foreach (var i in allData)
             {
-                cbList.Add($"{i.Id}. {i.Name}. {i.Time}");
+                cbList.Add($"{i.Id}. {i.Name} - {i.Time}");
             }
 
             cb.ItemsSource = cbList;
